@@ -10,6 +10,10 @@ import {
 //! html elemanlarını çağırma
 const form = document.querySelector('form');
 const noteList = document.querySelector('ul');
+  const cancelBtn = document.querySelector('#checkbox');
+  const aside = document.querySelector('.wrapper')
+
+
 
 //! global değişkenler (kodun heryerinden erişlebilen)
 var map;
