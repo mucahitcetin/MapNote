@@ -55,8 +55,8 @@ export var userIcon = L.icon({
     shadowAnchor: [30, 34],
   });
   
-  var parkIcon = L.icon({
-    iconUrl: '/images/Parking_8.png',
+  var foodIcon = L.icon({
+    iconUrl: '/images/food3.png',
     iconSize: [70, 75],
     popupAnchor: [0, -20],
     shadowUrl: '/images/my-icon-shadow.png',
@@ -69,5 +69,5 @@ export var userIcon = L.icon({
     goto: gotoIcon,
     home: homeIcon,
     job: jobIcon,
-    park: parkIcon,
+    food: foodIcon,
   };

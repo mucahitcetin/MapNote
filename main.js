@@ -10,9 +10,8 @@ import {
 //! html elemanlarını çağırma
 const form = document.querySelector('form');
 const noteList = document.querySelector('ul');
-  const cancelBtn = document.querySelector('#checkbox');
-  const aside = document.querySelector('.wrapper')
-
+let closeButton = document.querySelector('.toggle');
+let asideElement = document.querySelector('aside');
 
 
 //! global değişkenler (kodun heryerinden erişlebilen)
@@ -23,7 +22,7 @@ var markerLayer = [];
 
 //* haritayı ekran basan fonksiyon
 function loadMap(coords) {
-  var map = L.map('map').setView(coords, 15);
+  map = L.map('map').setView(coords, 15);
 
   L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
@@ -181,4 +180,10 @@ noteList.addEventListener('click', (e) => {
     // not'un kordinatlarına git
     map.flyTo(note.coords);
   }
+});
+
+//menü/kapama butonu
+
+closeButton.addEventListener('click', function() {
+  asideElement.classList.toggle('close');
 });
